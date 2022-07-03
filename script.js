@@ -54,7 +54,7 @@ function btnNewQuote() {
   const randIndex = getRandomInt();
   let newQuote = QUOTES[randIndex];
 
-  quoteText.innerText = newQuote["quote"];
+  quoteText.innerText = ` " ${newQuote["quote"]} " `;
   quoteAuthor.innerText = `${newQuote["author"]} ; `;
 
   quoteAuthor.append(generateProfessionText(newQuote["profession"]));
